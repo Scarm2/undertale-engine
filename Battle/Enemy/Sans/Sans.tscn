@@ -1,0 +1,1042 @@
+[gd_scene load_steps=72 format=2]
+
+[ext_resource path="res://Textures/Sans/spr_sansb_legs.png" type="Texture" id=1]
+[ext_resource path="res://Textures/Sans/spr_sansb_legs_sit.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Sans/spr_sansb_torso/0.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Sans/spr_sansb_torso/7.png" type="Texture" id=4]
+[ext_resource path="res://Textures/Sans/spr_sansb_torso/3.png" type="Texture" id=5]
+[ext_resource path="res://Textures/Sans/spr_sansb_handdown/0.png" type="Texture" id=6]
+[ext_resource path="res://Textures/Sans/spr_sansb_torso/1.png" type="Texture" id=7]
+[ext_resource path="res://Textures/Sans/spr_sansb_torso/2.png" type="Texture" id=8]
+[ext_resource path="res://Textures/Sans/spr_sansb_torso/6.png" type="Texture" id=9]
+[ext_resource path="res://Textures/Sans/spr_sansb_handdown/1.png" type="Texture" id=10]
+[ext_resource path="res://Textures/Sans/spr_sansb_handup/3.png" type="Texture" id=11]
+[ext_resource path="res://Textures/Sans/spr_sansb_handup/4.png" type="Texture" id=12]
+[ext_resource path="res://Textures/Sans/spr_sansb_handdown/3.png" type="Texture" id=13]
+[ext_resource path="res://Textures/Sans/spr_sansb_handdown/4.png" type="Texture" id=14]
+[ext_resource path="res://Textures/Sans/spr_sansb_handup/0.png" type="Texture" id=15]
+[ext_resource path="res://Textures/Sans/spr_sansb_handup/1.png" type="Texture" id=16]
+[ext_resource path="res://Textures/Sans/spr_sansb_handdown/2.png" type="Texture" id=17]
+[ext_resource path="res://Textures/Sans/spr_sansb_handup/2.png" type="Texture" id=18]
+[ext_resource path="res://Textures/Sans/spr_sansb_handup/5.png" type="Texture" id=19]
+[ext_resource path="res://Textures/Sans/spr_sansb_rightstrike/0.png" type="Texture" id=20]
+[ext_resource path="res://Textures/Sans/spr_sansb_rightstrike/4.png" type="Texture" id=21]
+[ext_resource path="res://Textures/Sans/spr_sansb_rightstrike/3.png" type="Texture" id=22]
+[ext_resource path="res://Textures/Sans/spr_sansb_rightstrike/1.png" type="Texture" id=23]
+[ext_resource path="res://Textures/Sans/spr_sansb_rightstrike/2.png" type="Texture" id=24]
+[ext_resource path="res://Textures/Sans/spr_sansb_rightstrike/5.png" type="Texture" id=25]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/0.png" type="Texture" id=26]
+[ext_resource path="res://Battle/Enemy/Sans/Sans.gd" type="Script" id=27]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/5.png" type="Texture" id=28]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/3.png" type="Texture" id=29]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/2.png" type="Texture" id=30]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/4.png" type="Texture" id=31]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/1.png" type="Texture" id=32]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/6.png" type="Texture" id=33]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/10.png" type="Texture" id=34]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/9.png" type="Texture" id=35]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/7.png" type="Texture" id=36]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/8.png" type="Texture" id=37]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/11.png" type="Texture" id=38]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/12.png" type="Texture" id=39]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/14.png" type="Texture" id=40]
+[ext_resource path="res://Textures/Sans/spr_sansb_face/13.png" type="Texture" id=41]
+[ext_resource path="res://Textures/Sans/spr_sansb_blueeye/0.png" type="Texture" id=42]
+[ext_resource path="res://Textures/Sans/spr_sansb_blueeye/1.png" type="Texture" id=43]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Default"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -21, -23 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -23 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Sitting"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 2 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -25, -15 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, -15 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Bleed"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 4 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -26, -25 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -19 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "Cut"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 5 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -26, -25 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -19 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Default"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -27, -25 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -19 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Shrug"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 7 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -36, -24 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -19 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "ShrugBleed"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 9 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -35, -25 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -19 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "ShrugHit"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 8 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -33, -25 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -19 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "SlamDown"
+length = 0.45
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 17 ), ExtResource( 13 ), ExtResource( 14 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 0, 0, 0, 0, 0 ),
+"update": 0,
+"values": [ Vector2( -29, -47 ), Vector2( -30, -47 ), Vector2( -29, -47 ), Vector2( -29, -47 ), Vector2( -29, -47 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 0, 0, 0, 0, 0 ),
+"update": 0,
+"values": [ Vector2( 0, -19 ), Vector2( 0, -20 ), Vector2( 0, -17 ), Vector2( 0, -16 ), Vector2( 0, -16 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "SlamLeft"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 25 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 20 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 0, 0, 0, 0, 0, 0 ),
+"update": 0,
+"values": [ Vector2( -33, -25 ), Vector2( -33, -25 ), Vector2( -33, -25 ), Vector2( -33, -25 ), Vector2( -33, -25 ), Vector2( -33, -25 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 0, 0, 0, 0, 0, 0 ),
+"update": 0,
+"values": [ Vector2( 1, -19 ), Vector2( 1, -19 ), Vector2( 3, -19 ), Vector2( -3, -19 ), Vector2( -2, -19 ), Vector2( 0, -19 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "SlamRight"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 20 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 25 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 0, 0, 0, 0, 0, 0 ),
+"update": 0,
+"values": [ Vector2( -33, -25 ), Vector2( -33, -25 ), Vector2( -33, -25 ), Vector2( -33, -25 ), Vector2( -33, -25 ), Vector2( -33, -25 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 0, 0, 0, 0, 0, 0 ),
+"update": 0,
+"values": [ Vector2( 0, -19 ), Vector2( -2, -19 ), Vector2( -3, -19 ), Vector2( 3, -19 ), Vector2( 1, -19 ), Vector2( 1, -19 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "SlamUp"
+length = 0.55
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 19 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 0, 0, 0, 0, 0, 0 ),
+"update": 0,
+"values": [ Vector2( -30, -47 ), Vector2( -29, -47 ), Vector2( -29, -47 ), Vector2( -30, -47 ), Vector2( -29, -47 ), Vector2( -29, -47 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 0, 0, 0, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -17 ), Vector2( 0, -16 ), Vector2( 0, -19 ), Vector2( 0, -20 ), Vector2( 0, -19 ), Vector2( 0, -19 ) ]
+}
+
+[sub_resource type="Animation" id=21]
+resource_name = "BleedEyesClosed"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 34 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "BleedLookDown"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 38 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "BleedSad"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 36 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=23]
+resource_name = "BleedWink"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 37 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=28]
+resource_name = "BlueEye"
+length = 0.1
+loop = true
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.06 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 42 ), ExtResource( 43 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.06 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ), Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Default"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 26 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "EyesClosed"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 31 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "LookLeft"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 32 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "NoEyes"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 28 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=24]
+resource_name = "Sad"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 35 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=19]
+resource_name = "Shocked"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 33 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=25]
+resource_name = "Sleep0"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 39 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=26]
+resource_name = "Sleep1"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 41 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=27]
+resource_name = "Sleep2"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 40 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "Wink"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 29 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "Worry"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 30 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16, -30 ) ]
+}
+
+[node name="Sans" type="Node2D" groups=[
+"SansBattle",
+]]
+script = ExtResource( 27 )
+
+[node name="Legs" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -21, -23 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Animation" type="AnimationPlayer" parent="Legs"]
+anims/Default = SubResource( 1 )
+anims/Sitting = SubResource( 4 )
+
+[node name="Pivot" type="Position2D" parent="Legs"]
+position = Vector2( 0, -23 )
+
+[node name="Body" type="Sprite" parent="."]
+position = Vector2( 0, -23 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -27, -25 )
+
+[node name="Animation" type="AnimationPlayer" parent="Body"]
+anims/Bleed = SubResource( 5 )
+anims/Cut = SubResource( 6 )
+anims/Default = SubResource( 2 )
+anims/Shrug = SubResource( 7 )
+anims/ShrugBleed = SubResource( 8 )
+anims/ShrugHit = SubResource( 9 )
+anims/SlamDown = SubResource( 10 )
+anims/SlamLeft = SubResource( 13 )
+anims/SlamRight = SubResource( 12 )
+anims/SlamUp = SubResource( 11 )
+
+[node name="Pivot" type="Position2D" parent="Body"]
+position = Vector2( 0, -19 )
+
+[node name="Head" type="Sprite" parent="."]
+position = Vector2( 0, -42 )
+texture = ExtResource( 26 )
+centered = false
+offset = Vector2( -16, -30 )
+
+[node name="Animation" type="AnimationPlayer" parent="Head"]
+anims/BleedEyesClosed = SubResource( 21 )
+anims/BleedLookDown = SubResource( 22 )
+anims/BleedSad = SubResource( 20 )
+anims/BleedWink = SubResource( 23 )
+anims/BlueEye = SubResource( 28 )
+anims/Default = SubResource( 3 )
+anims/EyesClosed = SubResource( 14 )
+anims/LookLeft = SubResource( 15 )
+anims/NoEyes = SubResource( 16 )
+anims/Sad = SubResource( 24 )
+anims/Shocked = SubResource( 19 )
+anims/Sleep0 = SubResource( 25 )
+anims/Sleep1 = SubResource( 26 )
+anims/Sleep2 = SubResource( 27 )
+anims/Wink = SubResource( 17 )
+anims/Worry = SubResource( 18 )

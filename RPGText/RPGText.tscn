@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://RPGText/RPGText.gd" type="Script" id=2]
+
+[node name="RPGText" type="RichTextLabel" groups=[
+"RPGText",
+]]
+margin_right = 256.0
+margin_bottom = 128.0
+rect_pivot_offset = Vector2( 128, 64 )
+rect_clip_content = false
+bbcode_enabled = true
+bbcode_text = "RPGText"
+text = "RPGText"
+scroll_active = false
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+process_mode = 0
+wait_time = 0.001
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="TimerTimeout"]

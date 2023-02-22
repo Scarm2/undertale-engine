@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Warning.ogg-7713c4eb9a971af0ed685080aaaf6e12.oggstr"
+
+[deps]
+
+source_file="res://Audio/Warning.ogg"
+dest_files=[ "res://.import/Warning.ogg-7713c4eb9a971af0ed685080aaaf6e12.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

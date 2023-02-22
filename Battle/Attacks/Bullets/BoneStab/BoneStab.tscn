@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Textures/BoneV.png" type="Texture" id=1]
+[ext_resource path="res://Battle/Attacks/Bullets/HitBox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Textures/BoneStabWarn.png" type="Texture" id=3]
+[ext_resource path="res://Battle/Attacks/Bullets/BoneStab/BoneStab.gd" type="Script" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+resource_local_to_scene = true
+
+[node name="BoneStab" type="NinePatchRect" groups=[
+"BoneStab",
+]]
+margin_right = 12.0
+margin_bottom = 24.0
+texture = ExtResource( 1 )
+patch_margin_top = 6
+patch_margin_bottom = 6
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Warning" type="NinePatchRect" parent="."]
+margin_right = 32.0
+margin_bottom = 32.0
+texture = ExtResource( 3 )
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HitBox" parent="." instance=ExtResource( 2 )]
+
+[node name="Collision" parent="HitBox" index="0"]
+shape = SubResource( 1 )
+
+[editable path="HitBox"]

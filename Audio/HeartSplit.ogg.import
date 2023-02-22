@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/HeartSplit.ogg-adc0b4bdf0875aa0e84020c384e224db.oggstr"
+
+[deps]
+
+source_file="res://Audio/HeartSplit.ogg"
+dest_files=[ "res://.import/HeartSplit.ogg-adc0b4bdf0875aa0e84020c384e224db.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

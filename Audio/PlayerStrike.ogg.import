@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/PlayerStrike.ogg-8f7bdcca0482fd69e3e152e1a69c223e.oggstr"
+
+[deps]
+
+source_file="res://Audio/PlayerStrike.ogg"
+dest_files=[ "res://.import/PlayerStrike.ogg-8f7bdcca0482fd69e3e152e1a69c223e.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

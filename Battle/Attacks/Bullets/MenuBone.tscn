@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Battle/Attacks/Bullets/HitBox.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/MenuBone.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 5, 20 )
+
+[node name="MenuBone" type="Sprite"]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="HitBox" parent="." instance=ExtResource( 1 )]
+position = Vector2( 7, 22 )
+
+[node name="Collision" parent="HitBox" index="0"]
+shape = SubResource( 1 )
+
+[editable path="HitBox"]

@@ -1,0 +1,10 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[sub_resource type="DynamicFontData" id=1]
+resource_local_to_scene = true
+antialiased = false
+font_path = "res://Fonts/Sans Undertale.ttf"
+
+[resource]
+size = 28
+font_data = SubResource( 1 )

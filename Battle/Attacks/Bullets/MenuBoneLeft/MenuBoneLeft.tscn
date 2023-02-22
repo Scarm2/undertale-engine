@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Battle/Attacks/Bullets/MenuBone.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Battle/Attacks/Bullets/MenuBoneLeft/MenuBoneLeft.gd" type="Script" id=2]
+
+[node name="MenuBoneLeft" type="Node2D" groups=[
+"MenuBone",
+]]
+script = ExtResource( 2 )
+
+[node name="MenuBone" parent="." instance=ExtResource( 1 )]

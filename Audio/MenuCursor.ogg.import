@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/MenuCursor.ogg-b4f19bd84342a28af0722c3aed0ed462.oggstr"
+
+[deps]
+
+source_file="res://Audio/MenuCursor.ogg"
+dest_files=[ "res://.import/MenuCursor.ogg-b4f19bd84342a28af0722c3aed0ed462.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

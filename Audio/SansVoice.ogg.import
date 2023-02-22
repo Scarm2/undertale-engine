@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SansVoice.ogg-e7f957b604e550fac5603e83faf9532b.oggstr"
+
+[deps]
+
+source_file="res://Audio/SansVoice.ogg"
+dest_files=[ "res://.import/SansVoice.ogg-e7f957b604e550fac5603e83faf9532b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

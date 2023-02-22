@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/HeartShatter.ogg-d829a352979f71ceff02591349a2f347.oggstr"
+
+[deps]
+
+source_file="res://Audio/HeartShatter.ogg"
+dest_files=[ "res://.import/HeartShatter.ogg-d829a352979f71ceff02591349a2f347.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
